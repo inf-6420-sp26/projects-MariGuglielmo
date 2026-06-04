@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Report: Wayne State University Page Analysis</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #222;
+            background-color: #f7f7f7;
+        }
+
+        header,
+        main,
+        footer {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        figure.screenshot {
+            max-width: 900px;
+            margin: 1.25rem auto;
+        }
+
+        figure.screenshot img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #bbb;
+        }
+
+        figcaption {
+            font-size: 0.95rem;
+            color: #444;
+            margin-top: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #bbb;
+            padding: 0.65rem;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 0.1rem 0.25rem;
+            border-radius: 3px;
+        }
+
+        .note {
+            background-color: #eef6f4;
+            border-left: 4px solid #0c5449;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Research Report: Wayne State University Page Analysis</h1>
+
+        <p>
+            Selected page:
+            <a href="https://education.wayne.edu/educational-leadership-policy-studies/phd" target="_blank"
+                rel="noopener noreferrer">
+                Doctor of Philosophy in Educational Leadership and Policy Studies
+            </a>
+        </p>
+
+        <p>
+            Testing tools:
+            <a href="https://wave.webaim.org/report#/https://education.wayne.edu/educational-leadership-policy-studies/phd"
+                target="_blank" rel="noopener noreferrer">
+                WAVE accessibility results
+            </a>
+            |
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Feducation.wayne.edu%2Feducational-leadership-policy-studies%2Fphd"
+                target="_blank" rel="noopener noreferrer">
+                W3C HTML Validator
+            </a>
+        </p>
+
+        <nav aria-label="Report sections">
+            <ul>
+                <li><a href="#page-selection">Step 1: Page Selection</a></li>
+                <li><a href="#layout-analysis">Step 2: Layout Analysis</a></li>
+                <li><a href="#heading-hierarchy">Step 3: Heading Hierarchy</a></li>
+                <li><a href="#lists">Step 4: Lists</a></li>
+                <li><a href="#link-analysis">Step 5: Link Analysis</a></li>
+                <li><a href="#tables">Step 6: Tables</a></li>
+                <li><a href="#accessibility-review">Step 7: Accessibility Review</a></li>
+                <li><a href="#html-validation">Step 8: HTML Validation</a></li>
+                <li><a href="#summary">Step 9: Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="page-selection">
+            <h2>Step 1: Page Selection</h2>
+
+            <p>
+                I selected the Wayne State University College of Education page for the
+                Doctor of Philosophy in Educational Leadership and Policy Studies because
+                it is a public program page within the wayne.edu domain. The page includes
+                a clear institutional header, a footer, a main navigation menu with more
+                than three links, body text describing the program, images and icons, and
+                multiple list structures. It also contains several visible heading levels,
+                including the main program title, section headings, and subsection headings.
+                Because the page meets the minimum structural criteria, it is appropriate
+                for this research report.
+            </p>
+
+            <figure class="screenshot">
+                <img src="images/01-page-top.png"
+                    alt="Top section of the Wayne State University College of Education program page showing the header, navigation menu, breadcrumb, sidebar navigation, and program title">
+                <figcaption>
+                    Figure 1. Top of the selected Wayne State University program page.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="layout-analysis">
+            <h2>Step 2: Section-by-Section Layout Analysis</h2>
+
+            <article>
+                <h3>Site Header</h3>
+
+                <figure class="screenshot">
+                    <img src="images/02-site-header.png"
+                        alt="Wayne State University site header showing the institutional logo, university name, login icon, search field, and College of Education branding">
+                    <figcaption>
+                        Figure 2. The site header identifies Wayne State University and the College of Education.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    I would mark this section with the <code>&lt;header&gt;</code> element
+                    because it introduces the website and provides institutional branding.
+                    It contains the Wayne State University identity, the College of Education
+                    label, and utility features such as login and search.
+                </p>
+            </article>
+
+            <article>
+                <h3>Main Navigation</h3>
+
+                <figure class="screenshot">
+                    <img src="images/03-main-navigation.png"
+                        alt="Main navigation menu with links including Admissions, Programs, Students, Faculty and staff, Community outreach, Research, About, and Alumni">
+                    <figcaption>
+                        Figure 3. Main navigation menu for the College of Education site.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    I would mark this section with the <code>&lt;nav&gt;</code> element
+                    because it contains the primary navigation links for the College of
+                    Education website. The links allow users to move to major sections such
+                    as Admissions, Programs, Students, Research, and Alumni.
+                </p>
+            </article>
+
+            <article>
+                <h3>Sidebar Navigation</h3>
+
+                <figure class="screenshot">
+                    <img src="images/04-sidebar-navigation.png"
+                        alt="Sidebar navigation list showing program categories such as Minors, Bachelor programs, Masters programs, and Doctoral programs">
+                    <figcaption>
+                        Figure 4. Sidebar navigation for program categories.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    I would also mark this section with the <code>&lt;nav&gt;</code> element
+                    because it provides navigation within the program area of the site.
+                    Unlike the main navigation, this menu is more specific to program
+                    categories, such as bachelor, master, and doctoral programs.
+                </p>
+            </article>
+
+            <article>
+                <h3>Primary Content</h3>
+
+                <figure class="screenshot">
+                    <img src="images/05-primary-content.png"
+                        alt="Primary content area showing the program title, descriptive text, important dates panel, Apply now button, Request Info button, and Prerequisites heading">
+                    <figcaption>
+                        Figure 5. Primary content area for the doctoral program page.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    I would mark this section with <code>&lt;main&gt;</code> because it
+                    contains the central content unique to this page. The program title,
+                    description, call-to-action buttons, important dates, and requirements
+                    are the main reason a visitor would open this page.
+                </p>
+            </article>
+
+            <article>
+                <h3>Page Footer</h3>
+
+                <figure class="screenshot">
+                    <img src="images/09-page-footer.png"
+                        alt="Footer of the Wayne State University College of Education page showing social media icons, address, phone number, email address, privacy policy link, and copyright information">
+                    <figcaption>
+                        Figure 6. Footer with College of Education contact information and institutional links.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    I would mark this section with the <code>&lt;footer&gt;</code> element
+                    because it closes the page and provides site-wide supporting information.
+                    It includes contact information, social media links, policy links, and
+                    copyright information.
+                </p>
+            </article>
+        </section>
+
+        <section id="heading-hierarchy">
+            <h2>Step 3: Heading Hierarchy</h2>
+
+            <p>
+                The page uses a clear visual heading hierarchy. The program title functions
+                as the main page heading, broad content areas function as second-level
+                headings, and more specific subsections function as third-level headings.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Heading text</th>
+                        <th>Recommended level</th>
+                        <th>Justification</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Doctor of Philosophy in Educational Leadership and Policy Studies</td>
+                        <td>H1</td>
+                        <td>This is the main title of the page and identifies the specific program.</td>
+                    </tr>
+                    <tr>
+                        <td>Prerequisites</td>
+                        <td>H2</td>
+                        <td>This begins a major content section about admission prerequisites.</td>
+                    </tr>
+                    <tr>
+                        <td>Application Procedures</td>
+                        <td>H2</td>
+                        <td>This begins a major section explaining how applicants proceed through the application
+                            process.</td>
+                    </tr>
+                    <tr>
+                        <td>Post-Admission Procedures</td>
+                        <td>H2</td>
+                        <td>This begins a major section about requirements after admission.</td>
+                    </tr>
+                    <tr>
+                        <td>Course Requirements</td>
+                        <td>H2</td>
+                        <td>This introduces a major section describing required coursework.</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced EPS Courses (18 credit hours)</td>
+                        <td>H3</td>
+                        <td>This is a subsection under Course Requirements and identifies one group of required courses.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Research Techniques (15 credit hours required)</td>
+                        <td>H3</td>
+                        <td>This is another subsection under Course Requirements.</td>
+                    </tr>
+                    <tr>
+                        <td>Curriculum</td>
+                        <td>H2</td>
+                        <td>This introduces a major section showing the program sequence by semester.</td>
+                    </tr>
+                    <tr>
+                        <td>Fall semester I</td>
+                        <td>H3</td>
+                        <td>This is a subsection within the Curriculum section.</td>
+                    </tr>
+                    <tr>
+                        <td>Winter semester II</td>
+                        <td>H3</td>
+                        <td>This is another semester-level subsection within the Curriculum section.</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>H2</td>
+                        <td>This begins the final major content section with contact information.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="note">
+                The selected headings show a clear three-level hierarchy: the program title
+                functions as the main heading, major content areas function as second-level
+                headings, and course or semester subsections function as third-level headings.
+            </p>
+        </section>
+
+        <section id="lists">
+            <h2>Step 4: Lists</h2>
+
+            <article>
+                <h3>Sidebar Program Navigation List</h3>
+
+                <figure class="screenshot">
+                    <img src="images/04-sidebar-navigation.png"
+                        alt="Sidebar navigation list showing links to different program categories">
+                    <figcaption>
+                        Figure 7. Sidebar navigation list.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    This should be marked up as an unordered list using
+                    <code>&lt;ul&gt;</code> because the program categories do not need to
+                    be read in a strict sequence. The list items are links, and each item
+                    takes the user to another program category page.
+                </p>
+            </article>
+
+            <article>
+                <h3>Prerequisites List</h3>
+
+                <figure class="screenshot">
+                    <img src="images/06-prerequisites-list.png"
+                        alt="Prerequisites section showing a bulleted list of admission requirements for the doctoral program">
+                    <figcaption>
+                        Figure 8. Unordered list of prerequisites.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    This should be marked up as an unordered list using
+                    <code>&lt;ul&gt;</code> because the requirements are related items but
+                    are not presented as numbered steps. The list items are plain text.
+                </p>
+            </article>
+
+            <article>
+                <h3>Residency Requirement List</h3>
+
+                <figure class="screenshot">
+                    <img src="images/07-residency-ordered-list.png"
+                        alt="Residency Requirement section showing a numbered list of doctoral program residency requirements">
+                    <figcaption>
+                        Figure 9. Ordered list of residency requirements.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    This should be marked up as an ordered list using
+                    <code>&lt;ol&gt;</code> because the items are displayed numerically.
+                    The list items are plain text and describe specific residency
+                    requirements.
+                </p>
+            </article>
+        </section>
+
+        <section id="link-analysis">
+            <h2>Step 5: Link Analysis</h2>
+
+            <p>
+                The page contains both internal and external links. Internal links stay
+                within the wayne.edu domain, while external links go to a different domain.
+                I checked the visible navigation and footer links rather than guessing the
+                URLs.
+            </p>
+
+            <h3>Internal link examples</h3>
+            <ul>
+                <li>
+                    <a href="https://education.wayne.edu/career-paths" target="_blank" rel="noopener noreferrer">
+                        Programs
+                    </a>
+                    — This is an internal link because it stays within the education.wayne.edu
+                    domain. It leads to the College of Education academic programs and career
+                    paths page.
+                </li>
+                <li>
+                    <a href="https://education.wayne.edu/students" target="_blank" rel="noopener noreferrer">
+                        Students
+                    </a>
+                    — This is an internal link because it stays within the education.wayne.edu
+                    domain. It leads to the College of Education students section.
+                </li>
+                <li>
+                    <a href="https://education.wayne.edu/research" target="_blank" rel="noopener noreferrer">
+                        Research
+                    </a>
+                    — This is an internal link because it stays within the education.wayne.edu
+                    domain. It leads to the College of Education research section.
+                </li>
+            </ul>
+
+            <h3>External link examples</h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/WayneStateCOE/" target="_blank" rel="noopener noreferrer">
+                        Wayne State College of Education Facebook
+                    </a>
+                    — This is an external link because it takes users away from the wayne.edu
+                    domain to facebook.com.
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/waynestatecoe/" target="_blank" rel="noopener noreferrer">
+                        Wayne State College of Education Instagram
+                    </a>
+                    — This is an external link because it takes users away from the wayne.edu
+                    domain to instagram.com.
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/company/waynestatecoe/" target="_blank" rel="noopener noreferrer">
+                        Wayne State College of Education LinkedIn
+                    </a>
+                    — This is an external link because it takes users away from the wayne.edu
+                    domain to linkedin.com.
+                </li>
+            </ul>
+
+            <p>
+                I would expect these external social media links to open in a new tab because
+                they take users away from the Wayne State University website. Opening them in
+                a new tab allows the original program page to remain available while users
+                visit the social media site. The page uses recognizable social media icons as
+                visual indicators, but it does not provide a visible text label next to each
+                icon in the footer. Clear accessible names are important so that screen-reader
+                users can understand each social media destination.
+            </p>
+        </section>
+
+        <section id="tables">
+            <h2>Step 6: Tables</h2>
+
+            <figure class="screenshot">
+                <img src="images/08-course-table.png"
+                    alt="Course requirements table showing course names and credit hours for the doctoral program">
+                <figcaption>
+                    Figure 10. Course requirements table.
+                </figcaption>
+            </figure>
+
+            <p>
+                The page contains data tables that present course requirements and credit
+                hours. The table structure is appropriate because the information is
+                tabular: each row represents a course, and the columns identify the course
+                name and the number of credit hours. The column labels, such as Courses
+                and Cr. Hrs., should be marked up as <code>&lt;th&gt;</code> header cells
+                so screen readers can associate each data cell with the correct column.
+            </p>
+        </section>
+
+        <section id="accessibility-review">
+            <h2>Step 7: Accessibility Review</h2>
+
+            <figure class="screenshot">
+                <img src="images/10-wave-results.png"
+                    alt="WAVE accessibility results panel showing zero errors, zero contrast errors, sixteen alerts, fifty-seven features, one hundred fifty structure items, and one hundred forty-seven ARIA items">
+                <figcaption>
+                    Figure 11. WAVE accessibility results for the selected Wayne State University page.
+                </figcaption>
+            </figure>
+
+            <p>
+                I tested the selected page using the WAVE accessibility tool. WAVE reported
+                0 errors, 0 contrast errors, and 16 alerts. The page also showed 57
+                features, 150 structural elements, and 147 ARIA items.
+            </p>
+
+            <p>
+                The most significant alert was long alternative text, which appeared 10
+                times. This does not necessarily mean that the images are missing
+                alternative text, but it suggests that some alternative text may be longer
+                than necessary. Long alt text can make screen-reader output inefficient,
+                especially when it repeats information that is already visible nearby.
+            </p>
+
+            <p>
+                WAVE also reported 2 HTML5 video or audio alerts. These should be reviewed
+                manually because meaningful multimedia content may require captions,
+                transcripts, or accessible controls.
+            </p>
+
+            <p>
+                The page's key visual elements appear to have accessible names or
+                alternative text. For example, the Wayne State University logo in the header
+                is implemented as an SVG and uses an ARIA label reference that identifies it
+                as "Wayne State University." One specific improvement would be to review
+                and shorten the long alternative text instances so that each image has
+                concise, purpose-focused alt text.
+            </p>
+        </section>
+
+        <section id="html-validation">
+            <h2>Step 8: HTML Validation</h2>
+
+            <figure class="screenshot">
+                <img src="images/11-validator-results.png"
+                    alt="W3C HTML Validator results for the Wayne State University College of Education doctoral program page showing validation errors and informational messages">
+                <figcaption>
+                    Figure 12. W3C HTML Validator results for the selected Wayne State University page.
+                </figcaption>
+            </figure>
+
+            <p>
+                I tested the selected Wayne State University page using the W3C HTML
+                Validator. Based on the validator output, the page reported 11 errors,
+                0 warnings, and 2 informational messages. The informational messages were
+                about trailing slashes on void elements, which do not count as validation
+                errors.
+            </p>
+
+            <p>
+                One error reported by the validator was that the <code>aria-hidden</code>
+                attribute must not be specified on the <code>&lt;noscript&gt;</code> element.
+                In plain language, this means that the page is using an ARIA accessibility
+                attribute on an element where that attribute is not allowed. This matters
+                because invalid ARIA usage can make the page structure less reliable for
+                browsers and assistive technologies.
+            </p>
+
+            <p>
+                The validator also reported repeated table-structure errors involving
+                <code>&lt;tbody&gt;</code> elements. In plain language, this means that some
+                table sections appear in an invalid order or in an invalid location inside the
+                table markup. Because the page uses tables to present course and credit-hour
+                data, valid table structure is important for both standards compliance and
+                accessibility.
+            </p>
+
+            <p>
+                One specific improvement would be for the site owner to remove
+                <code>aria-hidden</code> from the <code>&lt;noscript&gt;</code> element and
+                review the course tables so that each table uses a valid structure with
+                <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and
+                <code>&lt;tfoot&gt;</code> in the correct order. This would make the HTML
+                more standards-compliant and easier for assistive technologies to interpret.
+            </p>
+        </section>
+        <section id="summary">
+            <h2>Step 9: Summary</h2>
+
+            <p>
+                Overall, the selected Wayne State University page is well organized and
+                provides a clear path for users who want information about the doctoral
+                program. The page has a recognizable header, multiple navigation areas, a main
+                content region, structured lists, data tables, and a clear footer. The strongest
+                part of the page is its content organization because users can quickly find the
+                program title, requirements, curriculum information, and contact details. The
+                most significant issues found during the review were the long alternative text
+                alerts in WAVE and the HTML validation errors related to ARIA and table
+                structure. The improvement with the biggest positive impact would be to review
+                all non-text content and table markup so the page is both more accessible and
+                more standards-compliant.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Research report prepared for Project 2.1.</p>
+    </footer>
+</body>
+
+</html>
