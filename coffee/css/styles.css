@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+/* Base styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #000;
+  background-color: #fff;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 150px);
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+/* Headings */
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0;
+  font-size: 64px;
+  line-height: 1;
+  color: #fff; 
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #000;
+}
+
+/* Header / hero area */
+
+header {
+  min-height: 150px;
+  background-color: #048fbc;
+  background-image: url("../images/paul-gilmore-145802-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  padding-top: 22px;
+  padding-bottom: 28px;
+}
+
+.motto {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Menu section */
+
+#menu {
+  background-color: #f0f0f0;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+#menu dl {
+  margin: 0;
+}
+
+#menu dt {
+  font-weight: 700;
+}
+
+#menu dd {
+  margin-left: 0;
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+
+/* About section */
+
+main {
+  background-color: #e0e0e0;
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+
+main p:first-of-type {
+  margin: 0;
+}
+
+main img {
+  width: 260px;
+  float: right;
+  margin: 0 0 24px 36px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #3e1305;
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 24px;
+  text-align: left;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p:first-child {
+  margin-bottom: 2px;
+}
+
+footer a {
+  display: inline-block;
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+footer svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  vertical-align: middle;
+}
