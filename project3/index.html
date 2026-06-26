@@ -1,36 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>From Idea to Backlog</title>
+  <title>Guide | From Idea to Backlog</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <h1>From Idea to Backlog</h1>
-    <p>A Product Owner guide for turning business requests into clear backlog items.</p>
 
-    <nav>
-      <a href="index.html">Guide</a>
-      <a href="resources.html">Resources</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Product Owner Practice Guide</p>
+      <h1>From Idea to Backlog</h1>
+      <p class="tagline">
+        A practical guide for turning business requests into clear, prioritized,
+        and actionable backlog items for an IT team.
+      </p>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="current-page" aria-current="page">Guide</a>
+        <a href="resources.html">Resources</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Guide Page</h2>
-      <p>
-        This page will explain how a Product Owner collects a business request,
-        clarifies the problem, writes backlog items, adds acceptance criteria,
-        and prepares the work for an IT team.
-      </p>
+    <section class="intro-section">
+      <div class="container">
+        <h2>What this guide covers</h2>
+        <p>
+          A Product Owner often receives ideas, requests, issues, and priorities
+          from different stakeholders. The challenge is to transform those inputs
+          into backlog items that are clear enough for an IT team to discuss,
+          estimate, and build.
+        </p>
+        <p>
+          This guide explains a simple workflow for moving from a business request
+          to a refined backlog item with user value, scope, acceptance criteria,
+          and priority.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <h2>The backlog creation process</h2>
+        <p>
+          The process below is organized as a sequence because each step builds on
+          the previous one. A request should be understood before it is written,
+          and it should be clarified before it is prioritized.
+        </p>
+
+        <ol class="process-grid">
+          <li>
+            <article class="process-card">
+              <h3>Capture the request</h3>
+              <p>
+                Start by documenting the original request, who asked for it, and
+                what business area or user group is affected.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="process-card">
+              <h3>Understand the problem</h3>
+              <p>
+                Ask what problem needs to be solved, why it matters, and what
+                outcome the stakeholder expects.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="process-card">
+              <h3>Define scope and value</h3>
+              <p>
+                Clarify what is included, what is not included, and how the request
+                supports a business goal or user need.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="process-card">
+              <h3>Write the backlog item</h3>
+              <p>
+                Convert the request into a user story, task, bug, or spike using
+                language that both stakeholders and developers can understand.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="process-card">
+              <h3>Add acceptance criteria</h3>
+              <p>
+                Define the conditions that must be true for the backlog item to be
+                considered complete and working as expected.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="process-card">
+              <h3>Prioritize and refine</h3>
+              <p>
+                Review the item with the team, discuss dependencies and risks, and
+                place it in the backlog based on value, urgency, and effort.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="backlog-item">
+      <div class="container">
+        <h2>Anatomy of a strong backlog item</h2>
+
+        <article class="example-card">
+          <h3>Example user story</h3>
+          <p>
+            <strong>User story:</strong> As a customer, I want to reset my password
+            so that I can recover access to my account without contacting support.
+          </p>
+
+          <h4>Business value</h4>
+          <p>
+            This item reduces support requests and helps customers regain access
+            to their accounts faster.
+          </p>
+
+          <h4>Acceptance criteria</h4>
+          <ul>
+            <li>The user can request a password reset using a registered email address.</li>
+            <li>The system sends a reset link to the email address on file.</li>
+            <li>The reset link expires after a defined period.</li>
+            <li>The user receives confirmation after successfully changing the password.</li>
+            <li>An invalid or expired reset link displays a clear error message.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="definition-ready">
+      <div class="container">
+        <h2>Definition of ready checklist</h2>
+        <p>
+          Before an item moves into development, the Product Owner and IT team
+          should confirm that the item is understandable, valuable, and realistic.
+        </p>
+
+        <ul class="checklist">
+          <li>The problem and target user are clear.</li>
+          <li>The business value is stated.</li>
+          <li>The acceptance criteria are testable.</li>
+          <li>Major dependencies are known.</li>
+          <li>Open questions are documented.</li>
+          <li>The team has enough information to discuss effort and approach.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="mistakes">
+      <div class="container">
+        <h2>Common backlog mistakes</h2>
+        <p>
+          Many backlog problems come from unclear language, missing context, or
+          weak prioritization. These are common issues to avoid.
+        </p>
+
+        <ul class="mistake-list">
+          <li>Writing a solution before understanding the problem.</li>
+          <li>Creating items that are too large to discuss or estimate.</li>
+          <li>Skipping acceptance criteria.</li>
+          <li>Marking every item as urgent.</li>
+          <li>Ignoring technical risks or dependencies.</li>
+          <li>Using business jargon without explaining what it means.</li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 From Idea to Backlog</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 From Idea to Backlog. Project 3 for INF 6420.</p>
+    </div>
   </footer>
 </body>
+
 </html>

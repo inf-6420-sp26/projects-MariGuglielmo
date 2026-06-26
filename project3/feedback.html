@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | From Idea to Backlog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">Product Owner Practice Guide</p>
+            <h1>Feedback and Contact</h1>
+            <p class="tagline">
+                Share a backlog challenge, ask a question, or request guidance on turning
+                a business idea into a clear item for an IT team.
+            </p>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Guide</a>
+                <a href="resources.html">Resources</a>
+                <a href="feedback.html" class="current-page" aria-current="page">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>Ask a Product Owner question</h2>
+                <p>
+                    Use this form to describe a request, backlog problem, refinement issue,
+                    or prioritization question. The goal is to collect enough context to
+                    understand the problem before suggesting the next step.
+                </p>
+                <p>
+                    Required fields are marked in the form. The browser will check that the
+                    required fields are completed before the form can be submitted.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="feedback-form">
+            <div class="container feedback-layout">
+                <div class="contact-card">
+                    <h2>Before you send feedback</h2>
+                    <p>
+                        A useful backlog question usually explains the user, the problem, the
+                        expected value, and any constraint that affects the work.
+                    </p>
+
+                    <ul class="checklist">
+                        <li>Who is affected by the request?</li>
+                        <li>What problem needs to be solved?</li>
+                        <li>What outcome would make the work successful?</li>
+                        <li>Are there deadlines, risks, or dependencies?</li>
+                    </ul>
+                </div>
+
+                <form class="feedback-form" action="#" method="post">
+                    <div class="form-field">
+                        <label for="full-name">Full name <span class="required">*</span></label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="role">Your role <span class="required">*</span></label>
+                        <select id="role" name="role" required>
+                            <option value="">Choose one option</option>
+                            <option value="product-owner">Product Owner</option>
+                            <option value="business-stakeholder">Business stakeholder</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="qa-tester">QA tester</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="topic">What do you need help with? <span class="required">*</span></label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Choose one topic</option>
+                            <option value="capturing-request">Capturing a business request</option>
+                            <option value="writing-user-story">Writing a user story</option>
+                            <option value="acceptance-criteria">Creating acceptance criteria</option>
+                            <option value="prioritization">Prioritizing backlog items</option>
+                            <option value="refinement">Preparing for backlog refinement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form-field">
+                        <legend>How familiar are you with backlog work?</legend>
+
+                        <div class="choice-group">
+                            <div class="choice-item">
+                                <input type="radio" id="beginner" name="experience_level" value="beginner">
+                                <label for="beginner">Beginner</label>
+                            </div>
+
+                            <div class="choice-item">
+                                <input type="radio" id="intermediate" name="experience_level" value="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                            </div>
+
+                            <div class="choice-item">
+                                <input type="radio" id="advanced" name="experience_level" value="advanced">
+                                <label for="advanced">Advanced</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <legend>Which areas are you interested in?</legend>
+
+                        <div class="choice-group">
+                            <div class="choice-item">
+                                <input type="checkbox" id="stories" name="interests" value="user-stories">
+                                <label for="stories">User stories</label>
+                            </div>
+
+                            <div class="choice-item">
+                                <input type="checkbox" id="criteria" name="interests" value="acceptance-criteria">
+                                <label for="criteria">Acceptance criteria</label>
+                            </div>
+
+                            <div class="choice-item">
+                                <input type="checkbox" id="tools" name="interests" value="tools">
+                                <label for="tools">Backlog tools</label>
+                            </div>
+
+                            <div class="choice-item">
+                                <input type="checkbox" id="priorities" name="interests" value="prioritization">
+                                <label for="priorities">Prioritization</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-field">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="7" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Send feedback</button>
+                        <button type="reset">Clear form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 From Idea to Backlog. Project 3 for INF 6420.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

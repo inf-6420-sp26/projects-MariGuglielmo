@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | From Idea to Backlog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">Product Owner Practice Guide</p>
+            <h1>Backlog Resources</h1>
+            <p class="tagline">
+                Templates, tools, methods, and reference materials for creating clearer
+                backlog items.
+            </p>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Guide</a>
+                <a href="resources.html" class="current-page" aria-current="page">Resources</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>Why resources matter</h2>
+                <p>
+                    A strong backlog process depends on repeatable habits. Templates,
+                    checklists, and shared terminology help a Product Owner communicate
+                    more clearly with stakeholders, developers, designers, testers, and
+                    business partners.
+                </p>
+                <p>
+                    The resources below can be used before backlog refinement, during
+                    planning conversations, or when a request needs more discovery before it
+                    is ready for development.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="templates">
+            <div class="container">
+                <h2>Templates and checklists</h2>
+                <p>
+                    These resources help turn vague requests into specific, testable, and
+                    prioritized backlog items.
+                </p>
+
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <h3>Stakeholder interview questions</h3>
+                        <p>
+                            Use these questions before writing the backlog item.
+                        </p>
+                        <ul>
+                            <li>Who is affected by this problem?</li>
+                            <li>What happens today without this change?</li>
+                            <li>What business result should improve?</li>
+                            <li>What deadline, risk, or dependency exists?</li>
+                        </ul>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>User story template</h3>
+                        <p>
+                            Use this format when the work is centered on a user need.
+                        </p>
+                        <p>
+                            <strong>As a</strong> user type, <strong>I want</strong> a capability,
+                            <strong>so that</strong> I can achieve a specific outcome.
+                        </p>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Acceptance criteria checklist</h3>
+                        <p>
+                            Use this checklist to confirm that the expected behavior is clear.
+                        </p>
+                        <ul>
+                            <li>Can the behavior be tested?</li>
+                            <li>Are success and failure cases included?</li>
+                            <li>Are error messages or edge cases described?</li>
+                            <li>Is the expected result visible to the team?</li>
+                        </ul>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Definition of Ready checklist</h3>
+                        <p>
+                            Use this before an item is pulled into development.
+                        </p>
+                        <ul>
+                            <li>The user or business problem is clear.</li>
+                            <li>The acceptance criteria are written.</li>
+                            <li>The priority is understood.</li>
+                            <li>Major dependencies are documented.</li>
+                        </ul>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Backlog refinement agenda</h3>
+                        <p>
+                            Use this structure to keep refinement meetings focused.
+                        </p>
+                        <ol>
+                            <li>Review the goal of the item.</li>
+                            <li>Clarify open questions.</li>
+                            <li>Discuss dependencies and risks.</li>
+                            <li>Confirm acceptance criteria.</li>
+                            <li>Decide whether the item is ready.</li>
+                        </ol>
+                    </article>
+
+                    <article class="resource-card">
+                        <h3>Priority scorecard</h3>
+                        <p>
+                            Use a simple scorecard when several requests compete for the same
+                            development capacity.
+                        </p>
+                        <ul>
+                            <li>Business value</li>
+                            <li>User impact</li>
+                            <li>Urgency</li>
+                            <li>Risk reduction</li>
+                            <li>Estimated effort</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="methods">
+            <div class="container">
+                <h2>Prioritization methods</h2>
+                <p>
+                    Prioritization helps the Product Owner decide what should be discussed,
+                    refined, and delivered first. The best method depends on the team, the
+                    product, and the type of decision being made.
+                </p>
+
+                <div class="table-wrapper">
+                    <table class="method-table">
+                        <caption>Common methods for prioritizing backlog work</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Method</th>
+                                <th scope="col">Best for</th>
+                                <th scope="col">How it helps</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MoSCoW</td>
+                                <td>Scope conversations</td>
+                                <td>
+                                    Separates work into Must Have, Should Have, Could Have, and
+                                    Won't Have categories.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Value vs. Effort</td>
+                                <td>Small to medium backlogs</td>
+                                <td>
+                                    Compares expected value against estimated effort to identify
+                                    quick wins and larger investments.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>RICE</td>
+                                <td>Feature prioritization</td>
+                                <td>
+                                    Scores items using reach, impact, confidence, and effort.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cost of Delay</td>
+                                <td>Time-sensitive work</td>
+                                <td>
+                                    Highlights the impact of waiting to deliver a feature, fix, or
+                                    process improvement.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Risk reduction</td>
+                                <td>Unclear or technical work</td>
+                                <td>
+                                    Gives priority to work that reduces uncertainty, validates an
+                                    assumption, or removes a blocker.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tools">
+            <div class="container">
+                <h2>Tools and further reading</h2>
+                <p>
+                    A backlog can be managed in many tools. In my Product Owner workflow,
+                    Microsoft Planner in Teams was a practical starting point because it kept
+                    backlog items, ownership, due dates, and status updates close to the team’s
+                    daily communication.
+                </p>
+                <p>
+                    The important part is not the tool itself, but whether the team uses it
+                    consistently to communicate scope, priority, status, dependencies, and
+                    decisions.
+                </p>
+
+                <ul class="tool-list">
+                    <li>
+                        <a href="https://support.microsoft.com/en-us/planner/teams/getting-started-with-planner-in-teams"
+                            target="_blank" rel="noopener noreferrer">Microsoft Planner in Teams</a>
+                        — useful for organizing backlog items as tasks, assigning owners, tracking due dates,
+                        and keeping work visible inside the team’s collaboration space.
+                    </li>
+                    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener noreferrer">Jira</a>
+                    — commonly used to manage epics, user stories, bugs, sprints, and releases.
+                    </li>
+                    <li>
+                        <a href="https://azure.microsoft.com/en-us/products/devops" target="_blank"
+                            rel="noopener noreferrer">Azure DevOps</a>
+                        — often used by IT teams for boards, repositories, pipelines, and work items.
+                    </li>
+                    <li>
+                        <a href="https://trello.com/" target="_blank" rel="noopener noreferrer">Trello</a>
+                        — useful for lightweight boards, simple workflows, and visual task tracking.
+                    </li>
+                    <li>
+                        <a href="https://miro.com/" target="_blank" rel="noopener noreferrer">Miro</a>
+                        — useful for mapping processes, brainstorming ideas, and organizing discovery notes.
+                    </li>
+                    <li>
+                        <a href="https://www.atlassian.com/software/confluence" target="_blank"
+                            rel="noopener noreferrer">Confluence</a>
+                        — commonly used for team documentation, decisions, meeting notes, and product requirements.
+                    </li>
+                    <li>
+                        <a href="https://scrumguides.org/" target="_blank" rel="noopener noreferrer">The Scrum Guide</a>
+                        — a reference for Scrum roles, events, artifacts, and commitments.
+                    </li>
+                    <li>
+                        <a href="https://www.atlassian.com/agile" target="_blank" rel="noopener noreferrer">Atlassian
+                            Agile resources</a>
+                        — articles and guides about agile practices, product work, and team collaboration.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="glossary">
+            <div class="container">
+                <h2>Backlog glossary</h2>
+                <p>
+                    Product and development teams use many specialized terms. A shared
+                    glossary helps reduce confusion during planning and refinement.
+                </p>
+
+                <dl class="glossary-list">
+                    <dt>Epic</dt>
+                    <dd>
+                        A large body of work that is usually too broad to complete in one
+                        development cycle.
+                    </dd>
+
+                    <dt>Feature</dt>
+                    <dd>
+                        A capability or group of related functionality that supports a business
+                        or user goal.
+                    </dd>
+
+                    <dt>User story</dt>
+                    <dd>
+                        A backlog item written from the perspective of a user need and desired
+                        outcome.
+                    </dd>
+
+                    <dt>Acceptance criteria</dt>
+                    <dd>
+                        Conditions that describe what must be true for a backlog item to be
+                        accepted as complete.
+                    </dd>
+
+                    <dt>Backlog refinement</dt>
+                    <dd>
+                        A team activity where backlog items are reviewed, clarified, split,
+                        estimated, or reprioritized.
+                    </dd>
+
+                    <dt>Definition of Ready</dt>
+                    <dd>
+                        A shared standard for deciding whether a backlog item has enough
+                        information to be considered ready for development.
+                    </dd>
+
+                    <dt>Spike</dt>
+                    <dd>
+                        A time-boxed investigation used when the team needs to reduce
+                        uncertainty before implementation.
+                    </dd>
+
+                    <dt>Dependency</dt>
+                    <dd>
+                        A relationship where one item depends on another task, team, system,
+                        decision, or external condition.
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section" id="using-resources">
+            <div class="container">
+                <h2>How to use these resources</h2>
+                <ol class="numbered-list">
+                    <li>Start with stakeholder questions to understand the request.</li>
+                    <li>Write the item using a clear user story or requirement format.</li>
+                    <li>Add acceptance criteria that can be tested.</li>
+                    <li>Use a prioritization method when multiple items compete for attention.</li>
+                    <li>Review the item with the IT team before it moves into development.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 From Idea to Backlog. Project 3 for INF 6420.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
