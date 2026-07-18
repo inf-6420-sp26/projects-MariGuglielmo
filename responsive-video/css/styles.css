@@ -1,0 +1,261 @@
+:root {
+    --color-navy: #17324d;
+    --color-blue: #2b5f8a;
+    --color-background: #f3f6f9;
+    --color-surface: #ffffff;
+    --color-text: #1d2733;
+    --color-muted: #5c6975;
+    --color-border: #d6dee6;
+    --color-focus: #ffbf00;
+    --color-shadow: rgba(23, 50, 77, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: calc(100% - 2rem);
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Keyboard-accessible skip link */
+
+.skip-link {
+    position: absolute;
+    top: -6rem;
+    left: 1rem;
+    z-index: 1000;
+
+    padding: 0.75rem 1rem;
+
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid var(--color-focus);
+
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* Header */
+
+.site-header {
+    padding: 3.5rem 0;
+
+    color: #ffffff;
+    background-color: var(--color-navy);
+}
+
+.eyebrow {
+    margin: 0 0 0.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: 2.25rem;
+    line-height: 1.15;
+}
+
+.tagline {
+    max-width: 44rem;
+    margin: 1rem 0 0;
+
+    font-size: 1.125rem;
+}
+
+/* Main content */
+
+.site-main {
+    padding: 3rem 0 4rem;
+}
+
+.section-intro {
+    max-width: 48rem;
+    margin-bottom: 2rem;
+}
+
+.section-intro h2 {
+    margin: 0 0 0.5rem;
+
+    color: var(--color-navy);
+    font-size: 1.75rem;
+    line-height: 1.25;
+}
+
+.section-intro p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+/* Flexbox thumbnail gallery */
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.video-card {
+    flex: 0 1 100%;
+    min-width: 0;
+}
+
+.video-card-link {
+    display: block;
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+
+    text-decoration: none;
+
+    box-shadow: 0 0.25rem 0.75rem var(--color-shadow);
+
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease;
+}
+
+.video-card-link:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.75rem 1.5rem var(--color-shadow);
+}
+
+.video-card-link:focus-visible {
+    outline: 4px solid var(--color-focus);
+    outline-offset: 4px;
+}
+
+.video-poster {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Flexbox alignment for icon, title, and description */
+
+.video-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+
+    padding: 1.125rem;
+}
+
+.video-icon {
+    flex: 0 0 auto;
+
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: 0.15rem;
+}
+
+.video-card-text {
+    min-width: 0;
+}
+
+.video-card-text h3 {
+    margin: 0 0 0.35rem;
+
+    color: var(--color-navy);
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+
+.video-card-text p {
+    margin: 0;
+
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+/* Footer */
+
+.site-footer {
+    padding: 1.5rem 0;
+
+    color: #ffffff;
+    background-color: var(--color-navy);
+}
+
+.site-footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Tablet: two columns */
+
+@media (min-width: 768px) {
+    .container {
+        width: calc(100% - 3rem);
+    }
+
+    .site-header h1 {
+        font-size: 3rem;
+    }
+
+    .video-card {
+        flex-basis: calc(50% - 0.75rem);
+    }
+}
+
+/* Wide desktop: four columns */
+
+@media (min-width: 1200px) {
+    .video-card {
+        flex-basis: calc(25% - 1.125rem);
+    }
+}
+
+/* Reduce animation for users who request less motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .video-card-link {
+        transition: none;
+    }
+
+    .video-card-link:hover {
+        transform: none;
+    }
+}
